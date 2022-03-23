@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Death to Pie Charts</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="👩‍💻 Jocelyn Mara" />
+    <script src="data-analysis_files/header-attrs/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Death to Pie Charts
+## (And other things they forgot to teach you)
+### 👩‍💻 Jocelyn Mara
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+## What we think data analysis is like
+
+&lt;img src="fig/data-analysis-process.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## What it's actually like
+
+&lt;img src="fig/data-analysis-epicycles.png" width="70%" style="display: block; margin: auto;" /&gt;
+---
+
+class: inverse center middle
+
+# Research Questions
+
+---
+
+class: center middle
+
+# Write down your research question 
+
+--
+
+&lt;img src="fig/mr-bean-waiting.jpeg" width="50%" style="display: block; margin: auto;" /&gt;
+
+---
+
+class: inverse center middle
+
+# Getting to know your variables 
+
+---
+
+class: center middle
+
+# Write down your independent and dependent variables
+
+--
+
+&lt;img src="fig/mr-bean-waiting.jpeg" width="50%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Types of variables and their properties
+
+&lt;img src="fig/properties-nominal.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Types of variables and their properties
+
+&lt;img src="fig/properties-ordinal.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Types of variables and their properties
+
+&lt;img src="fig/properties-interval.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Types of variables and their properties
+
+&lt;img src="fig/properties-ratio.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+## Nominal example
+
+&lt;img src="fig/nominal-ex1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Ordinal example
+
+&lt;img src="fig/ordinal-ex1.png" width="40%" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+## Interval example
+
+&lt;img src="fig/interval-ex1.jpeg" width="50%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Ratio examples
+
+- Time (e.g. in secs) to complete a task &amp;#x1F551;
+--
+
+- Distance run (e.g. in metres) &amp;#x1F3C3;
+--
+
+- Force produced (e.g. in N) &amp;#x1F4AA;
+--
+
+- Cerebral blood flow &amp;#x1F9E0; 
+--
+
+- A whole bunch of other lab and field-based measures 
+
+---
+
+## What types of variables will you be collecting?
+
+&lt;img src="fig/properties-ratio.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+class: inverse center middle
+
+# Setting up your data so your future self won't hate you
+
+![](fig/self-five.gif)
+
+---
+
+## Tidy data
+
+&lt;img src="fig/tidy-data.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Tidy data (continued)
+
+&lt;img src="fig/long-format-ex1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Long format example 1
+
+&lt;img src="fig/long-format-ex1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Long format example 2
+
+&lt;img src="fig/long-format-ex2.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Wide format example
+
+&lt;img src="fig/wide-format-ex1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+---
+class: inverse center middle
+
+# Missing values 
+
+---
+
+## Explicitly missing values example 1
+
+&lt;img src="fig/explicitly-missing-ex1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Explicitly missing values example 2
+
+&lt;img src="fig/explicitly-missing-ex2.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+
+## Implicitly missing values
+
+&lt;img src="fig/implicitly-missing-ex1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+class: inverse center middle
+
+# Being a data explorer 
+
+---
+# Exploratory data analysis checklist
+
+- Visualise your data
+--
+
+- Identify patterns in your data (e.g. variance, covariance)
+--
+
+- Check for missing values
+--
+
+- Check for measurement errors
+--
+
+- Check for outliers
+
+---
+
+class: inverse center middle
+
+# Being a data viz wiz &amp;#x1F9D9;
+
+---
+
+## The right viz for the right job
+
+&lt;img src="fig/data-visualisation.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+class: inverse center middle
+
+# Let's go to the bar (plot)
+
+---
+
+## A bar plot
+
+Bar plots can be used to show the distribution of **categorical variables**
+
+&lt;img src="data-analysis_files/figure-html/unnamed-chunk-22-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## A stacked barplot
+
+A stacked barplot can be used to show 2 categorical variables
+
+&lt;img src="data-analysis_files/figure-html/unnamed-chunk-23-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## A better stacked barplot
+
+Use a stacked barplot when showing **proportions** of 2 categorical variables
+
+&lt;img src="data-analysis_files/figure-html/unnamed-chunk-24-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## A barplot with dodging
+
+Use a barplot with dodging when showing **counts** of 2 categorical variables
+
+&lt;img src="data-analysis_files/figure-html/unnamed-chunk-25-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Death to pie charts
+
+&lt;br&gt;
+
+&lt;img src="fig/death-to-pie-charts.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+---
+class: center inverse middle
+
+# #grammin with histograms
+
+---
+
+## A histogram
+
+Histograms can be used to inspect the distribution of **continuous variables**
+
+&lt;img src="data-analysis_files/figure-html/unnamed-chunk-27-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Bin widths
+
+Check that adjusting the binwidth doesn't change your interpretation of the
+distribution
+
+&lt;img src="data-analysis_files/figure-html/unnamed-chunk-28-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+class: inverse center middle
+
+# Comparing groups
+
+---
+
+## Death to dynamite charts
+
+Don't use a bar plot and error bars for continuous variables 
+
+&lt;img src="data-analysis_files/figure-html/unnamed-chunk-29-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## A histogram with facets
+
+What these distributions really look like
+
+&lt;img src="data-analysis_files/figure-html/unnamed-chunk-30-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## A boxplot
+
+A boxplot can be used to compare the 5-number summary of a continuous variable between groups
+
+&lt;img src="data-analysis_files/figure-html/unnamed-chunk-31-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+
+---
+## A raincloud plot
+
+If you want to be really creative and make your reviewers say "o0o0o0o0o"
+
+&lt;img src="data-analysis_files/figure-html/unnamed-chunk-32-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+## Axis scales
+
+Limit your axes to values that make sense for your variables
+
+&lt;img src="data-analysis_files/figure-html/unnamed-chunk-33-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Flipping the axis
+
+Flipping the axis *might* be suitable in some situations
+
+&lt;img src="data-analysis_files/figure-html/unnamed-chunk-34-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Flipping the axis
+
+But don't be a jerk about it. With great data comes great responsibility.
+
+&lt;img src="fig/gun-deaths.jpg" width="35%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Comparing timepoints
+
+Sometimes the techniques used to compare groups can also be used to compare timepoints
+
+&lt;img src="data-analysis_files/figure-html/unnamed-chunk-36-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Comparing timepoints
+
+Connect repeated measures for participants to better show how individuals have
+responded
+
+&lt;img src="data-analysis_files/figure-html/unnamed-chunk-37-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Using facets to add more dimensions
+
+
+&lt;img src="data-analysis_files/figure-html/unnamed-chunk-38-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Using colour to add more dimensions
+
+&lt;img src="data-analysis_files/figure-html/unnamed-chunk-39-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Some resources for picking colour
+
+- [How to choose a colour palette](https://blog.datawrapper.de/beautifulcolors/)
+- [Colour palette generator](https://learnui.design/tools/data-color-picker.html)
+
+
+---
+
+class: inverse center middle
+
+# Some final advice
+
+---
+class: center middle
+
+# If you torture data long enough it will tell you anything you want to hear
+
+
+
+---
+class: center middle
+
+# Don't be a stargazer &amp;#x1F929;
+
+---
+class: inverse center middle
+
+&lt;img src="fig/you-got-this.gif" width="60%" style="display: block; margin: auto;" /&gt;
+---
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "%current%",
+"highlightStyle": "magula",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
